@@ -3,61 +3,68 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: sans-serif;
   background: #0d1b2a;
   color: #fff;
-  padding: 1.5rem;
+  padding: 1.5rem 2rem 2rem;
   -webkit-user-select: none;
   user-select: none;
 }
+
 h1 {
   text-align: center;
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 42px;
+  font-weight: 700;
   color: #ffd700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
   letter-spacing: 0.05em;
 }
+
 .board {
-  max-width: 960px;
+  width: min(96vw, 1600px);
   margin: 0 auto;
 }
+
 .categories {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 10px;
+  margin-bottom: 10px;
 }
+
 .cat-header {
   background: #1a3a6b;
   color: #fff;
   text-align: center;
-  padding: 10px 6px;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 6px;
-  line-height: 1.3;
-  min-height: 56px;
+  padding: 18px 12px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  line-height: 1.25;
+  min-height: 110px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .cells {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 6px;
+  gap: 10px;
 }
+
 .cell {
   background: #1a5fb4;
   color: #ffd700;
   text-align: center;
-  padding: 14px 6px;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 6px;
+  padding: 24px 10px;
+  font-size: 38px;
+  font-weight: 700;
+  border-radius: 10px;
   cursor: pointer;
-  min-height: 60px;
+  min-height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,134 +72,269 @@ h1 {
     opacity 0.15s,
     transform 0.1s;
 }
+
 .cell:hover {
   opacity: 0.85;
   transform: scale(1.02);
 }
+
 .cell.used {
   background: #1c2b3a;
   color: #4a5a6a;
   cursor: default;
-  font-size: 20px;
+  font-size: 34px;
 }
+
 .cell.used:hover {
   opacity: 1;
   transform: none;
 }
+
 .score-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1rem;
-  max-width: 960px;
+  gap: 16px;
+  margin-bottom: 1.5rem;
+  width: min(96vw, 1600px);
   margin-left: auto;
   margin-right: auto;
 }
+
 .score {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 700;
   color: #ffd700;
 }
+
 .reset-btn {
   background: transparent;
-  border: 1px solid #4a6fa5;
+  border: 2px solid #4a6fa5;
   color: #aac4e8;
-  padding: 7px 16px;
-  border-radius: 6px;
+  padding: 12px 20px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 13px;
+  font-size: 18px;
+  font-weight: 600;
   transition: background 0.15s;
 }
+
 .reset-btn:hover {
   background: #1a3a6b;
 }
+
 .modal-bg {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.78);
   z-index: 100;
   align-items: center;
   justify-content: center;
+  padding: 24px;
 }
+
 .modal-bg.open {
   display: flex;
 }
+
 .modal {
   background: #0d2545;
-  border: 1px solid #2a5fa8;
-  border-radius: 12px;
-  padding: 2.5rem 2rem;
-  max-width: 480px;
-  width: 92%;
+  border: 2px solid #2a5fa8;
+  border-radius: 18px;
+  padding: 3rem 2.5rem;
+  max-width: 1100px;
+  width: min(94vw, 1100px);
   text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
 }
+
 .modal-cat {
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: #7aaee8;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 8px;
+  letter-spacing: 0.14em;
+  margin-bottom: 12px;
 }
+
 .modal-points {
-  font-size: 40px;
-  font-weight: 700;
+  font-size: 64px;
+  font-weight: 800;
   color: #ffd700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
+
 .modal-clue {
-  font-size: 16px;
+  font-size: 34px;
   color: #dce8f5;
-  line-height: 1.7;
-  margin-bottom: 1.5rem;
-  min-height: 60px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .modal-answer {
   display: none;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
   color: #2ecc71;
-  margin-bottom: 1.5rem;
-  padding: 12px 16px;
+  margin-bottom: 2rem;
+  padding: 18px 22px;
   background: rgba(46, 204, 113, 0.12);
-  border: 1px solid rgba(46, 204, 113, 0.3);
-  border-radius: 8px;
+  border: 2px solid rgba(46, 204, 113, 0.3);
+  border-radius: 12px;
+  line-height: 1.45;
 }
+
 .modal-answer.visible {
   display: block;
 }
+
 .btn-row {
   display: flex;
-  gap: 10px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .btn-row button {
-  padding: 9px 18px;
-  border-radius: 6px;
-  border: 1px solid #2a5fa8;
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 2px solid #2a5fa8;
   background: #1a3a6b;
   color: #aac4e8;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: 600;
   transition: background 0.15s;
 }
+
 .btn-row button:hover {
   background: #2a5fa8;
   color: #fff;
 }
+
 .btn-correct {
   border-color: rgba(46, 204, 113, 0.5) !important;
   color: #2ecc71 !important;
 }
+
 .btn-correct:hover {
   background: rgba(46, 204, 113, 0.2) !important;
 }
+
 .btn-wrong {
   border-color: rgba(231, 76, 60, 0.5) !important;
   color: #e74c3c !important;
 }
+
 .btn-wrong:hover {
   background: rgba(231, 76, 60, 0.2) !important;
+}
+
+/* Large tablet / smaller projector screens */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  .cat-header {
+    font-size: 16px;
+    min-height: 90px;
+    padding: 14px 10px;
+  }
+
+  .cell {
+    font-size: 28px;
+    min-height: 95px;
+    padding: 18px 8px;
+  }
+
+  .score {
+    font-size: 26px;
+  }
+
+  .modal {
+    max-width: 900px;
+  }
+
+  .modal-points {
+    font-size: 52px;
+  }
+
+  .modal-clue {
+    font-size: 26px;
+    min-height: 110px;
+  }
+
+  .modal-answer {
+    font-size: 24px;
+  }
+}
+
+/* Mobile / narrow screens */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .score-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .score {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .categories,
+  .cells {
+    gap: 6px;
+  }
+
+  .cat-header {
+    font-size: 12px;
+    min-height: 72px;
+    padding: 10px 6px;
+  }
+
+  .cell {
+    font-size: 20px;
+    min-height: 72px;
+    padding: 12px 6px;
+  }
+
+  .modal {
+    padding: 2rem 1.25rem;
+  }
+
+  .modal-cat {
+    font-size: 14px;
+  }
+
+  .modal-points {
+    font-size: 40px;
+  }
+
+  .modal-clue {
+    font-size: 20px;
+    min-height: auto;
+  }
+
+  .modal-answer {
+    font-size: 18px;
+  }
+
+  .btn-row button,
+  .reset-btn {
+    font-size: 16px;
+  }
 }
