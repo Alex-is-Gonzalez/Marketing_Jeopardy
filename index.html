@@ -15,7 +15,13 @@
 
     <div class="score-bar">
       <div class="score">Score: $<span id="score">0</span></div>
-      <button class="reset-btn" onclick="resetGame()">↺ Reset</button>
+
+      <div style="display: flex; gap: 10px;">
+        <button class="reset-btn" onclick="resetGame()">↺ Reset</button>
+        <button class="reset-btn" onclick="toggleBoard()" id="board-toggle-btn">
+          Switch to Board 2
+        </button>
+      </div>
     </div>
 
     <div class="board">
