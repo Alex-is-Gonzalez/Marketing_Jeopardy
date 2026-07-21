@@ -194,8 +194,8 @@ const board2 = [
         pts: 200,
       },
       {
-        q: "A brand sends this document to multiple agencies when they want them to pitch ideas and pricing for a project.",
-        a: "UkZQIChSZXF1ZXN0IGZvciBQcm9wb3NhbCk=",
+        q: "Unlike B2C, this model involves selling software, tools, or services from one company to another.",
+        a: "QjJCIChCdXNpbmVzcyB0byBCdXNpbmVzcyk=",
         pts: 400,
       },
       {
@@ -204,8 +204,8 @@ const board2 = [
         pts: 600,
       },
       {
-        q: "Unlike B2C, this model involves selling software, tools, or services from one company to another.",
-        a: "QjJCIChCdXNpbmVzcyB0byBCdXNpbmVzcyk=",
+        q: "A brand sends this document to multiple agencies when they want them to pitch ideas and pricing for a project.",
+        a: "UkZQIChSZXF1ZXN0IGZvciBQcm9wb3NhbCk=",
         pts: 800,
       },
       {
@@ -249,13 +249,13 @@ const board2 = [
     name: "Snap Universe",
     clues: [
       {
-        q: "Snapchat's three core product pillars — the tools and experiences that define the platform.",
-        a: "VGhlIDMgQydzOiBDaGF0LCBDYW1lcmEsIENvbnRlbnQ=",
+        q: "A static graphic overlay — often branded for an event or location — that users can add to a Snap after taking it.",
+        a: "RmlsdGVy",
         pts: 200,
       },
       {
-        q: "This type of Snap ad shows up directly in a user's inbox, making it feel more like a message from a friend than a traditional ad.",
-        a: "U3BvbnNvcmVkIFNuYXA=",
+        q: "Snapchat's three core product pillars — the tools and experiences that define the platform.",
+        a: "VGhlIDMgQydzOiBDaGF0LCBDYW1lcmEsIENvbnRlbnQ=",
         pts: 400,
       },
       {
@@ -265,52 +265,52 @@ const board2 = [
       },
       {
         q: "Content that vanishes after it's viewed — a core feature that makes Snapchat feel more authentic and in-the-moment.",
-        a: "RXBoZW1lcmFsIGNvbnRlbnQ=",
+        a: "RXBoZW1lcmFs",
         pts: 800,
       },
       {
-        q: "A static graphic overlay — often branded for an event or location — that users can add to a Snap after taking it.",
-        a: "RmlsdGVy",
+        q: "This type of Snap ad shows up directly in a user's inbox, making it feel more like a message from a friend than a traditional ad.",
+        a: "U3BvbnNvcmVkIFNuYXA=",
         pts: 1000,
       },
     ],
   },
   {
-    name: "Campaigns & Events",
+    name: "Brands in the Wild",
     clues: [
-      {
-        q: "A brand sets up an immersive pop-up experience at a music festival to let fans try their product. This type of marketing is called what?",
-        a: "RXhwZXJpZW50aWFsIEV2ZW50IC8gQWN0aXZhdGlvbg==",
-        pts: 200,
-      },
-      {
-        q: "The Super Bowl, Coachella, and the Oscars are all examples of this — major cultural moments brands build campaigns around.",
-        a: "VGVudHBvbGUgRXZlbnQ=",
-        pts: 400,
-      },
-      {
-        q: "A brand builds a campaign around Valentine's Day to maximize relevance. What type of moment are they leveraging?",
-        a: "VGVudHBvbGUgRXZlbnQgLyBDdWx0dXJhbCBNb21lbnQ=",
-        pts: 600,
-      },
-      {
-        q: "This document maps out every phase of a campaign — goals, audience, channels, tactics, and when everything goes live.",
-        a: "TWFya2V0aW5nIFBsYW4=",
-        pts: 800,
-      },
       {
         q: "An activation where consumers don't just see the brand — they touch it, feel it, taste it, or participate in it. The goal is an emotional memory.",
         a: "RXhwZXJpZW50aWFsIE1hcmtldGluZyAvIEJyYW5kIEFjdGl2YXRpb24=",
+        pts: 200,
+      },
+      {
+        q: "This discipline manages how a brand communicates with the public, press, and media to shape perception and build credibility.",
+        a: "UHVibGljIFJlbGF0aW9ucyAoUFIp",
+        pts: 400,
+      },
+      {
+        q: "Coverage, mentions, and buzz a brand earns organically — through press, word of mouth, or viral moments — without paying for it.",
+        a: "RWFybmVkIE1lZGlh",
+        pts: 600,
+      },
+      {
+        q: "When a brand's reputation is on the line — think a viral controversy or a product recall — this is the strategy used to respond and recover.",
+        a: "Q3Jpc2lzIENvbW11bmljYXRpb25z",
+        pts: 800,
+      },
+      {
+        q: "When a brand executive or creator becomes known as an expert voice in their industry — shaping conversations beyond just their own product.",
+        a: "VGhvdWdodCBMZWFkZXJzaGlw",
         pts: 1000,
       },
     ],
   },
   {
-    name: "Research & Analysis",
+    name: "Know Before You Go",
     clues: [
       {
-        q: "A structured breakdown of a competitor's campaign — what they did, who they targeted, and whether it worked.",
-        a: "TWFya2V0aW5nIFRlYXJkb3du",
+        q: "A fictional but data-backed profile of your ideal customer — including their habits, goals, and frustrations.",
+        a: "UGVyc29uYQ==",
         pts: 200,
       },
       {
@@ -319,18 +319,18 @@ const board2 = [
         pts: 400,
       },
       {
-        q: "A fictional but data-backed profile of your ideal customer — including their habits, goals, and frustrations.",
-        a: "UGVyc29uYQ==",
+        q: "The first official meeting that kicks off a project — where goals, roles, timelines, and expectations get aligned between a brand and its team or agency.",
+        a: "S2ljayBPZmYgQ2FsbCAvIE1lZXRpbmc=",
         pts: 600,
       },
       {
-        q: "Instead of making decisions based on instinct, marketers use this approach to let numbers and insights guide the strategy.",
-        a: "RGF0YS1JbmZvcm1lZCBEZWNpc2lvbiBNYWtpbmc=",
+        q: "Collecting and analyzing data about your target audience, industry trends, competitors, and market size to inform strategy.",
+        a: "TWFya2V0IFJlc2VhcmNo",
         pts: 800,
       },
       {
-        q: "This type of research combines surveys, focus groups, and social listening to understand who your audience really is and what they care about.",
-        a: "TWFya2V0IFJlc2VhcmNoIC8gQ3VzdG9tZXIgQW5hbHlzaXM=",
+        q: "A structured breakdown of a competitor's campaign — what they did, who they targeted, and whether it worked.",
+        a: "TWFya2V0aW5nIFRlYXJkb3du",
         pts: 1000,
       },
     ],
@@ -359,8 +359,8 @@ const board2 = [
         pts: 800,
       },
       {
-        q: "This metric tells you what percentage of people who saw your content actually did what you wanted them to do.",
-        a: "Q29udmVyc2lvbiBSYXRl",
+        q: "A framework that evaluates a brand's Strengths, Weaknesses, Opportunities, and Threats — often the starting point before any campaign.",
+        a: "U1dPVCBBbmFseXNpcw==",
         pts: 1000,
       },
     ],
@@ -382,8 +382,6 @@ function decodeAnswer(encoded) {
     return "(answer unavailable)";
   }
 }
-
-
 
 // All boards
 const boards = [board1, board2];
@@ -458,8 +456,7 @@ function revealAnswer() {
   const categories = getCurrentBoard();
   const clue = categories[activeCell.ci].clues[activeCell.row];
 
-  document.getElementById("m-answer").textContent =
-    "✓ " + decodeAnswer(clue.a);
+  document.getElementById("m-answer").textContent = "✓ " + decodeAnswer(clue.a);
   document.getElementById("m-answer").classList.add("visible");
 
   document.getElementById("m-btns").innerHTML = `
@@ -478,7 +475,7 @@ function markResult(correct) {
   }
 
   const cell = document.getElementById(
-    `cell-${activeCell.ci}-${activeCell.row}`
+    `cell-${activeCell.ci}-${activeCell.row}`,
   );
   cell.classList.add("used");
   cell.textContent = correct ? "✓" : "✗";
